@@ -12,16 +12,16 @@ body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
 }
+
+
+/**color del texto de los enlaces**/
+
 .enlaces-internos{
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
     padding: 10px;
     color: black;
-}
-.enlaces-internos a{
-    text-decoration: none;
-    color: rgba(2, 17, 20, 0.623);
 }
 .imagen-y-texto{
     display: flex;
@@ -75,8 +75,79 @@ body{
 .volver-al-inicio{
     text-align: center;
     position: relative;
+    }
+.contenido{
+    display: flex;
+    justify-content: space-around;
+    padding:20px;
 }
-.volver-al-inicio   a{
-    text-decoration: none;
-    color: rgba(2, 17, 20, 0.623);
+.columna-1{
+    padding: 15px;
+    text-align: center;
+}
+.columna-1 img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.imagenes-pequeñas{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.imagenes-pequeñas img{
+    max-width: 48%;
+    height: auto;
+    margin: 0 5px;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+.titulo-año{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+.nombre-campeon{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+
+/**NECESITO ENCUADRAR**/
+
+.contenido-estadisticas{
+    padding: 20px;
+}
+.estadisticas-cuadro-1  .estadisticas-cuadro-2{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.estadisticas-1  .estadisticas-2{
+    border: 1px;
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.estadisticas-1{
+    width: 300px;
+}
+.estadisticas-2{
+    width: 200px;
+}
+.estadisticas-1 img  .estadisticas-2 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.estadisticas-1 p  .estadisticas-2 p {
+    line-height: 1.5;
+}
+.estadisticas-1 p{
+    font-size: 16px;
+}
+.estadisticas-2 p{
+    font-size: 14px;
 }
