@@ -1,63 +1,10 @@
-body{
-    background-color: rgba(78, 65, 55, 0.664);
-    margin: 0    ;
-}  
-.cuadrado-titulo{
-        background-color: rgba(214, 186, 162, 0.527);
-        border: 3px solid;
-        padding: 20px;
-        text-align: center;
-}
-.titulo-pagina{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-}
+//ESTILOS GENERALES//
 
-h3:hover{
-    color: white;
-}
+@use "./layout/header";
+@use "./layout/nav";
+@use "./layout/footer";
 
-.contenido{
-    display: flex;
-    justify-content: space-around;
-    padding:20px;
-}
-.columna-1{
-    padding: 15px;
-    text-align: center;
-}
-.columna-1 img{
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-.imagenes-pequeñas{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-.imagenes-pequeñas img{
-    max-width: 48%;
-    height: auto;
-    margin: 0 5px;
-}
-
-p{
-    font-size: 16px;
-    line-height: 1.5;
-}
-.titulo-año{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-}
-.nombre-campeon{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-}
-
-h1:hover{
-    color: white;
-}
-/* css de estadisticas migrado en gran parte a bts */
+//ESTILOS PAGINAS//
+@use "./pages/fotosDest";
 
 

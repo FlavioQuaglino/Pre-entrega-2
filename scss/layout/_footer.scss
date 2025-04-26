@@ -1,0 +1,71 @@
+.suscripcion-container {
+    padding: 20px;
+    text-align: center;
+
+    .suscripcion-titulo {
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .suscripcion-formulario {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .suscripcion-campo {
+        flex-basis: 100%;
+        @media (min-width: 768px) {
+            flex-basis: 20%; 
+            text-align: left;
+        }
+    }
+
+    .suscripcion-correo{
+        display: block;
+        margin-bottom: 0.5rem; 
+        font-weight: bold;
+    }
+
+    .suscripcion-input {
+        flex-basis: 100%;
+        @media (min-width: 768px) {
+            flex-basis: 55%; 
+        }
+
+        .suscripcion-control {
+            display: block;
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+    }
+
+    .suscripcion-boton {
+        flex-basis: 100%;
+        @media (min-width: 768px) {
+            flex-basis: 15%; 
+        }
+
+        .suscripcion-submit {
+            display: block;
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.2s ease-in-out;
+
+            &:hover {
+                background-color: #0056b3;
+            }
+        }
+    }
+}
