@@ -1,10 +1,13 @@
 //ESTILOS GENERALES//
 
-@use "./layout/header";
-@use "./layout/nav";
-@use "./layout/footer";
+@use "layout/header";
+@use "layout/nav";
+@use "layout/footer";
 
 //ESTILOS PAGINAS//
-@use "./pages/fotosDest";
+@use "pages/fotosDest";
+@use "pages/campeones";
+@use "pages/ulitmos-mvp";
 
+//ESTADISITICAS ESTA CON DISEÑO RESPONSIVE DESDE BOOTSTRAP//
 

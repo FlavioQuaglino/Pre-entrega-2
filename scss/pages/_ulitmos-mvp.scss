@@ -1,0 +1,68 @@
+$margen-columnas: 15px;
+$margen-imagenes: 10px;
+
+.contenedor-columnas {
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 20px;
+}
+
+.columna {
+    flex: 1; 
+    margin: $margen-columnas;
+    padding: 15px;
+    box-sizing: border-box; 
+    min-width: calc(33.33% - 2 * #{$margen-columnas}); 
+}
+
+.titulo-columna {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.nombre-campeon{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.ontenedor-imagen-grande {
+    width: 100%;
+    margin-bottom: $margen-imagenes;
+
+    img {
+        display: block; 
+        width: 100%;
+        height: auto; 
+        margin: 0 auto; 
+    }
+}
+
+.texto-imagen {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.contenedor-imagenes-pequenas {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: $margen-imagenes;
+
+    img {
+        width: calc(50% - #{$margen-imagenes / 2}); 
+        height: auto;
+        display: block;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .contenedor-columnas {
+        flex-direction: column; 
+    }
+
+    .columna {
+        width: 100%;
+        margin-bottom: 2 * $margen-columnas; 
+        min-width: auto; 
+    }
+}
