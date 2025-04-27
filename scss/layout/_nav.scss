@@ -1,46 +1,66 @@
-h3:hover{
+/* css de estadisticas migrado en gran parte a bts */
+
+@mixin hover-blanco {
+    &:hover {
     color: white;
+    }
 }
 
-.contenido{
+.contenido {
     display: flex;
     justify-content: space-around;
-    padding:20px;
+    padding: 20px;
 }
-.columna-1{
+
+.columna {
     padding: 15px;
     text-align: center;
-}
-.columna-1 img{
+
+    &--1 {
+    @extend .columna; 
+    }
+
+    img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+    }
 }
-.imagenes-pequeñas{
+
+.imagenes-pequeñas {
     display: flex;
     justify-content: center;
     margin-top: 10px;
-}
-.imagenes-pequeñas img{
+
+    img {
     max-width: 48%;
     height: auto;
     margin: 0 5px;
+    }
 }
 
-p{
+p {
     font-size: 16px;
     line-height: 1.5;
 }
-.titulo-año{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-}
-.nombre-campeon{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+.titulo-base {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
 }
 
-h1:hover{
-    color: white;
+.titulo-año {
+    @extend .titulo-base; 
 }
-/* css de estadisticas migrado en gran parte a bts */
+
+.nombre-campeon {
+    @extend .titulo-base; 
+}
+
+h3 {
+    @include hover-blanco; 
+}
+
+h1 {
+    @include hover-blanco; 
+}
