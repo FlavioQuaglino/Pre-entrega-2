@@ -16,22 +16,18 @@ body {
   color: black;
 }
 
-h3:hover {
-  color: white;
-}
-
+/* css de estadisticas migrado en gran parte a bts */
 .contenido {
   display: flex;
   justify-content: space-around;
   padding: 20px;
 }
 
-.columna-1 {
+.columna, .columna--1 {
   padding: 15px;
   text-align: center;
 }
-
-.columna-1 img {
+.columna img, .columna--1 img {
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
@@ -42,7 +38,6 @@ h3:hover {
   justify-content: center;
   margin-top: 10px;
 }
-
 .imagenes-pequeñas img {
   max-width: 48%;
   height: auto;
@@ -54,21 +49,19 @@ p {
   line-height: 1.5;
 }
 
-.titulo-año {
+.titulo-base, .nombre-campeon, .titulo-año {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: black;
 }
 
-.nombre-campeon {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  color: black;
+h3:hover {
+  color: white;
 }
 
 h1:hover {
   color: white;
 }
 
-/* css de estadisticas migrado en gran parte a bts */
 .suscripcion-container {
   padding: 20px;
   text-align: center;
@@ -196,6 +189,22 @@ h1:hover {
     min-width: auto;
   }
 }
+.mi-footer-copyright {
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  text-align: center;
+}
+.mi-footer-copyright p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease-in-out;
+}
+.mi-footer-copyright p:hover {
+  transform: scale(1.05);
+  color: #007bff;
+}
+
 .contenedor-columnas {
   display: flex;
   flex-wrap: wrap;
@@ -259,6 +268,22 @@ h1:hover {
     min-width: auto;
   }
 }
+.mi-footer-copyright {
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  text-align: center;
+}
+.mi-footer-copyright p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.mi-footer-copyright p:hover {
+  transform: scale(1.05);
+  color: #007bff;
+}
+
 .contenedor-columnas {
   display: flex;
   flex-wrap: wrap;
@@ -321,6 +346,21 @@ h1:hover {
     margin-bottom: 30px;
     min-width: auto;
   }
+}
+.mi-footer-copyright {
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  text-align: center;
+}
+.mi-footer-copyright p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease-in-out;
+}
+.mi-footer-copyright p:hover {
+  transform: scale(1.05);
+  color: #007bff;
 }
 
 /*# sourceMappingURL=style.css.map */
