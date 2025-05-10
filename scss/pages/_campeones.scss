@@ -69,19 +69,19 @@ $margen-imagenes: 10px;
 .mi-footer-copyright {
     background-color: #f8f9fa; // Un gris claro de fondo
     padding: 1rem 0;
-    text-align: center; // Centra el texto dentro del div
+    text-align: center;
 
     p {
     margin: 0;
-    color: #6c757d; // Gris para el texto
+      color: #6c757d; // Un gris un poco más oscuro para el texto
     font-size: 0.9rem;
 
-      // Animación sutil al pasar el mouse (aplicada al párrafo)
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+      // Animación sutil al pasar el mouse (opcional)
+    transition: transform 0.3s ease-in-out; // Cambiamos 'color' por 'transform'
 
     &:hover {
-        transform: scale(1.05); // Pequeño aumento de tamaño
-        color: #007bff; // Color de énfasis al pasar el mouse
+        transform: scale(1.05); // Pequeño aumento de tamaño al pasar el mouse
+        color: #007bff; // Podemos mantener el cambio de color si te gusta
     }
     }
 }
