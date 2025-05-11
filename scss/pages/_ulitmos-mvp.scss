@@ -67,21 +67,21 @@ $margen-imagenes: 10px;
     }
 }
 .mi-footer-copyright {
-    background-color: #f8f9fa; // Un gris claro de fondo
+    background-color: #f8f9fa; 
     padding: 1rem 0;
     text-align: center;
 
     p {
     margin: 0;
-      color: #6c757d; // Un gris un poco más oscuro para el texto
+    color: #6c757d; 
     font-size: 0.9rem;
 
-      // Animación sutil al pasar el mouse (opcional)
-    transition: transform 0.3s ease-in-out; // Cambiamos 'color' por 'transform'
+    
+    transition: transform 0.3s ease-in-out; 
 
     &:hover {
-        transform: scale(1.05); // Pequeño aumento de tamaño al pasar el mouse
-        color: #007bff; // Podemos mantener el cambio de color si te gusta
+        transform: scale(1.05); 
+        color: #007bff; 
     }
     }
 }
