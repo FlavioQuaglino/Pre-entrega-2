@@ -1,18 +1,316 @@
-/* Error: Undefined variable.
- *    ,
- * 37 |     margin: $margen-columnas;
- *    |             ^^^^^^^^^^^^^^^^
- *    '
- *   scss\pages\_fotosDest.scss 37:13  @use
- *   scss\style.scss 8:1               root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 37 \2502      margin: $margen-columnas;\d\a    \2502              ^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\pages\\_fotosDest.scss 37:13  @use\a   scss\\style.scss 8:1               root stylesheet";
+@charset "UTF-8";
+body {
+  background-color: rgba(9, 9, 8, 0.664);
+  margin: 0;
 }
+
+.cuadrado-titulo {
+  background-color: rgba(214, 186, 162, 0.527);
+  border: 3px solid;
+  padding: 20px;
+  text-align: center;
+}
+
+.titulo-pagina {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: black;
+}
+
+/* css de estadisticas migrado en gran parte a bts */
+.contenido {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.columna, .columna--1 {
+  padding: 15px;
+  text-align: center;
+}
+.columna img, .columna--1 img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.imagenes-pequeñas {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.imagenes-pequeñas img {
+  max-width: 48%;
+  height: auto;
+  margin: 0 5px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.titulo-base, .nombre-campeon, .titulo-año {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: black;
+}
+
+h3:hover {
+  color: white;
+}
+
+h1:hover {
+  color: white;
+}
+
+.suscripcion-container {
+  padding: 20px;
+  text-align: center;
+}
+.suscripcion-container .suscripcion-titulo {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+.suscripcion-container .suscripcion-formulario {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+.suscripcion-container .suscripcion-campo {
+  flex-basis: 100%;
+}
+@media (min-width: 768px) {
+  .suscripcion-container .suscripcion-campo {
+    flex-basis: 20%;
+    text-align: left;
+  }
+}
+.suscripcion-container .suscripcion-correo {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.suscripcion-container .suscripcion-input {
+  flex-basis: 100%;
+}
+@media (min-width: 768px) {
+  .suscripcion-container .suscripcion-input {
+    flex-basis: 55%;
+  }
+}
+.suscripcion-container .suscripcion-input .suscripcion-control {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+.suscripcion-container .suscripcion-boton {
+  flex-basis: 100%;
+}
+@media (min-width: 768px) {
+  .suscripcion-container .suscripcion-boton {
+    flex-basis: 15%;
+  }
+}
+.suscripcion-container .suscripcion-boton .suscripcion-submit {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+.suscripcion-container .suscripcion-boton .suscripcion-submit:hover {
+  background-color: #0056b3;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.mi-footer-copyright {
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  text-align: center;
+}
+.mi-footer-copyright p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.mi-footer-copyright p:hover {
+  transform: scale(1.05);
+  color: #007bff;
+}
+
+.contenedor-columnas {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.columna {
+  flex: 1;
+  margin: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  min-width: calc(33.33% - 2 * 15px);
+}
+
+.contenedor-columnas {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.columna {
+  flex: 1;
+  margin: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  min-width: calc(33.33% - 2 * 15px);
+}
+
+.titulo-columna {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.nombre-campeon {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.ontenedor-imagen-grande {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.ontenedor-imagen-grande img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.texto-imagen {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.contenedor-imagenes-pequenas {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.contenedor-imagenes-pequenas img {
+  width: calc(50% - 5px);
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .contenedor-columnas {
+    flex-direction: column;
+  }
+  .columna {
+    width: 100%;
+    margin-bottom: 30px;
+    min-width: auto;
+  }
+}
+.contenedor-columnas {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.columna {
+  flex: 1;
+  margin: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  min-width: calc(33.33% - 2 * 15px);
+}
+
+.titulo-columna {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.nombre-campeon {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.ontenedor-imagen-grande {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.ontenedor-imagen-grande img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.texto-imagen {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.contenedor-imagenes-pequenas {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.contenedor-imagenes-pequenas img {
+  width: calc(50% - 5px);
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .contenedor-columnas {
+    flex-direction: column;
+  }
+  .columna {
+    width: 100%;
+    margin-bottom: 30px;
+    min-width: auto;
+  }
+}
+.mi-footer-copyright {
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  text-align: center;
+}
+.mi-footer-copyright p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease-in-out;
+}
+.mi-footer-copyright p:hover {
+  transform: scale(1.05);
+  color: #007bff;
+}
+
+/*# sourceMappingURL=style.css.map */

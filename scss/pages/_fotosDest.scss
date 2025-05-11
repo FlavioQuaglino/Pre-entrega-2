@@ -1,3 +1,6 @@
+$margen-columnas: 15px;
+$margen-imagenes: 10px;
+
 body {
     display: flex;
     flex-direction: column;
@@ -42,8 +45,7 @@ main {
 
 
 
-$margen-columnas: 15px;
-$margen-imagenes: 10px;
+
 
 .contenedor-columnas {
     display: flex;
